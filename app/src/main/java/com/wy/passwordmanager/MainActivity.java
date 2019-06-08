@@ -130,14 +130,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Log.i("TAG", "back button is pressed.");
+//        onDestroy();
+    }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.i("TAG", "MainActivity onDestroy is called.");
         if (dbOpenHlper != null) {
             dbOpenHlper.close();//关闭数据库的连接
         }

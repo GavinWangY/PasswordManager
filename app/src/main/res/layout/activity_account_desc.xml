@@ -21,63 +21,99 @@
             android:id="@+id/text_account_desc_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:text="分         组："/>
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="分        组:"/>
         <TextView
             android:id="@+id/account_desc_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/text_account_desc_group"
-            android:textSize="30sp"/>
+            android:layout_marginRight="10dp"
+            android:textSize="22sp"/>
 
         <TextView
             android:id="@+id/text_account_desc_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:layout_below="@+id/account_desc_group"
             android:layout_marginTop="20dp"
-            android:text="账号类型："/>
+            android:layout_marginLeft="10dp"
+            android:text="账号类型:"/>
         <TextView
             android:id="@+id/account_desc_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/text_account_desc_type"
             android:layout_alignLeft="@+id/account_desc_group"
-            android:textSize="30sp"/>
+            android:layout_marginRight="10dp"
+            android:textSize="22sp"/>
 
         <TextView
             android:id="@+id/text_account_desc_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:layout_below="@+id/text_account_desc_type"
             android:layout_marginTop="20dp"
-            android:text="账         号："/>
+            android:layout_marginLeft="10dp"
+            android:text="账        号:"/>
         <TextView
             android:id="@+id/account_desc_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/text_account_desc_account"
             android:layout_alignLeft="@+id/account_desc_group"
-            android:textSize="30sp"/>
+            android:layout_marginRight="10dp"
+            android:textSize="22sp"/>
 
         <TextView
             android:id="@+id/text_account_desc_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:layout_below="@+id/text_account_desc_account"
             android:layout_marginTop="20dp"
-            android:text="密         码："/>
+            android:layout_marginLeft="10dp"
+            android:text="密        码:"/>
         <TextView
             android:id="@+id/account_desc_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/text_account_desc_password"
             android:layout_alignLeft="@+id/account_desc_group"
-            android:textSize="30sp"/>
+            android:layout_marginRight="10dp"
+            android:textSize="22sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_account_desc_password"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_account_desc_copy_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:text="复制账号"/>
+            <Button
+                android:id="@+id/button_account_desc_copy_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:text="复制密码"/>
+        </LinearLayout>
+
     </RelativeLayout>
 
 </LinearLayout>

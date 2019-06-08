@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 public class DBOpenHlper extends SQLiteOpenHelper {
+    String TAG = "AccountDescActivity: ";
 
     final String CREATE_TABLE_SQL = "create table tb_account (_id integer primary key autoincrement, account_group TEXT, account_type TEXT, account TEXT, password TEXT)";
 
@@ -21,6 +22,6 @@ public class DBOpenHlper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        Log.i("TAG", "oldVersion: " + oldVersion + ", newVersion: " + newVersion);
+        Log.i(TAG, "oldVersion: " + oldVersion + ", newVersion: " + newVersion);
     }
 }
